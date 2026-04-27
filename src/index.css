@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #E61919;
+  --color-primary-dark: #cc1616;
+  --color-brand-bg: #0A0A0A;
+  --color-card-bg: #0D0D0D;
+  --color-content-bg: #050505;
+  --color-input-bg: #151515;
+  --color-border-dim: #222;
+  --color-border-med: #333;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-[#E0E0E0] antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+}
